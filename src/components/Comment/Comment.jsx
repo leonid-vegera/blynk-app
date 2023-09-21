@@ -1,12 +1,14 @@
 import './Comment.scss';
 
-export const Comment = () => {
+export const Comment = ({ comment }) => {
+  const { commentText } = comment;
+
   return (
     <li className='comment'>
-      <div className="comment-color"/>
+      <div className="comment-color" style={{ backgroundColor: comment.color }}/>
       <div className="comment-body">
         <pre className='comment-text'>
-          Test comment
+          {commentText}
         </pre>
       </div>
     </li>

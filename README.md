@@ -1,3 +1,5 @@
+[DEMO Link to implemented task](https://leonid-vegera.github.io/blynk-app)
+
 # Вимоги:
 
 ### Використовувати React

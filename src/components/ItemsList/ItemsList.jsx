@@ -1,23 +1,18 @@
 import './ItemsList.scss';
 import { Item } from '../Item/Item';
+import { useContext } from 'react';
+import { ItemsContext } from '../../service/ItemsContext';
 
 export function ItemsList() {
+  const {items} = useContext(ItemsContext);
+
   return (
     <ul className='list'>
-      <li className='list-item'>
-        Test
-        <span className='list-item-badge'>0</span>
-        <button type='button' className='list-item-button'>Delete</button>
-      </li>
-      {/*<li className='list-item'>*/}
-      {/*  Test*/}
-      {/*  <span className='list-item-badge'>0</span>*/}
-      {/*  <button type='button' className='list-item-button'>Delete</button>*/}
-      {/*</li>*/}
-
-      <Item/>
-      <Item/>
-      <Item/>
+      {items.map(item => (
+        <Item
+          item={item} key={item.id}
+        />
+      ))}
     </ul>
   )
 }
