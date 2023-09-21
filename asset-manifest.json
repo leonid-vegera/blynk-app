@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/blynk-app/static/css/main.618197df.css",
-    "main.js": "/blynk-app/static/js/main.3982f4b9.js",
+    "main.css": "/blynk-app/static/css/main.ec4da590.css",
+    "main.js": "/blynk-app/static/js/main.757c053c.js",
     "index.html": "/blynk-app/index.html",
-    "main.618197df.css.map": "/blynk-app/static/css/main.618197df.css.map",
-    "main.3982f4b9.js.map": "/blynk-app/static/js/main.3982f4b9.js.map"
+    "main.ec4da590.css.map": "/blynk-app/static/css/main.ec4da590.css.map",
+    "main.757c053c.js.map": "/blynk-app/static/js/main.757c053c.js.map"
   },
   "entrypoints": [
-    "static/css/main.618197df.css",
-    "static/js/main.3982f4b9.js"
+    "static/css/main.ec4da590.css",
+    "static/js/main.757c053c.js"
   ]
 }
