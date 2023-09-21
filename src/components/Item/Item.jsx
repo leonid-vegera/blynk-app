@@ -1,4 +1,4 @@
-import './Item.css';
+import './Item.scss';
 
 export const Item = () => {
   return (

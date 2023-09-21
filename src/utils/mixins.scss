@@ -1,0 +1,72 @@
+@import "variables";
+
+@mixin content() {
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+
+@mixin component() {
+  min-width: 500px;
+  max-width: 1000px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+@mixin component-title() {
+  text-align: left;
+  font-weight: normal;
+  color: gray;
+  font-size: 40px;
+}
+
+@mixin comment-form($width, $height) {
+  width: $width;
+  height: $height;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: $white;
+  border: 1px solid $semi-grey;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@mixin form-on-focus() {
+  color: $form-color;
+  background-color: $white;
+  border-color: $light-blue;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  outline: 0;
+}
+
+@mixin form-button($color) {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid $color;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $white;
+  background-color: $color;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@mixin form-button-on-hover($bgColor, $bordColor) {
+  color: $white;
+  background-color: $bgColor;
+  border-color: $bordColor;
+}
+
+@mixin form-button-on-focus($color) {
+  box-shadow: 0 0 0 0.2rem $color;
+  outline: 0;
+}

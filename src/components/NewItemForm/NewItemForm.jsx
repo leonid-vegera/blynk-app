@@ -1,4 +1,4 @@
-import './NewItemForm.css';
+import './NewItemForm.scss';
 
 export const NewItemForm = () => (
   <form className='item-form'>

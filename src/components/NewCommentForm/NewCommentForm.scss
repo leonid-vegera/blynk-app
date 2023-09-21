@@ -1,0 +1,43 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
+.comment-form {
+    display: flex;
+    margin-top: 20px;
+
+    &-control {
+        @include comment-form(100px, 60px);
+
+        &:focus {
+            @include form-on-focus();
+        }
+    }
+
+    &-textarea {
+        @include comment-form(100%, auto);
+        margin: 0 10px;
+        resize: vertical;
+        overflow: auto;
+
+        &:focus {
+            @include form-on-focus();
+        }
+    }
+
+    &-button {
+        @include form-button($blue);
+        max-height: 90px;
+
+        &:hover {
+            @include form-button-on-hover($button-bgc-blue, $button-brd-blue);
+        }
+
+        &:focus {
+            @include form-button-on-focus(rgba(0,123,255,.5));
+        }
+
+        &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.aside {
+    @include content();
+
+    @media(min-width: $breakpoint-sm) {
+        flex: 0 0 16.7%;
+        max-width: 16.7%;
+    }
+
+    &-container {
+        padding: 10px;
+        min-height: 100vh;
+        height: 100%;
+        max-width: 600px;
+        width: 100%;
+        background-color: $dark-grey;
+    }
+
+    &-title {
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        color: $aside-text-color;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import './NewCommentForm.css';
+import './NewCommentForm.scss';
 
 export const NewCommentForm = () => {
   return (
