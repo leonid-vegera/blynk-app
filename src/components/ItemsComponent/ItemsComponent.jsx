@@ -1,4 +1,4 @@
-import './ItemsComponent.css';
+import './ItemsComponent.scss';
 import { NewItemForm } from '../NewItemForm/NewItemForm';
 import { ItemsList } from '../ItemsList/ItemsList';
 

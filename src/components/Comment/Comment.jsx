@@ -1,4 +1,4 @@
-import './Comment.css';
+import './Comment.scss';
 
 export const Comment = () => {
   return (

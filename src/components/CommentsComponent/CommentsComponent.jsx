@@ -1,6 +1,6 @@
 import { CommentsList } from '../CommentsList/CommentsList';
 import { NewCommentForm } from '../NewCommentForm/NewCommentForm';
-import './CommentsComponent.css'
+import './CommentsComponent.scss'
 
 export const CommentsComponent = () => {
   return (

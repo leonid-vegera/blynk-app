@@ -1,36 +1,32 @@
 .aside {
-    width: 100%;
-    min-height: 1px;
-    padding: 0 15px;
-    position: relative;  /* дубликат - в миксин */
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
 }
-
-.aside-container {
-    padding: 10px;
-    min-height: 100vh;
-    height: 100%;
-    max-width: 600px;
-    width: 100%;
-    background-color: var(--dark-grey);
-}
-
-.aside-title {
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.aside-text {
-    color: #5b5d63;
-}
-
-.aside-text::first-letter {
-    text-transform: capitalize;
-}
-
-
 @media (min-width: 576px) {
-    .aside {
-        flex: 0 0 16.7%;
-        max-width: 16.7%;
-    }
+  .aside {
+    flex: 0 0 16.7%;
+    max-width: 16.7%;
+  }
 }
+.aside-container {
+  padding: 10px;
+  min-height: 100vh;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  background-color: #2b2f3e;
+}
+.aside-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+.aside-text {
+  color: #5b5d63;
+}
+.aside-text::first-letter {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=Aside.css.map */

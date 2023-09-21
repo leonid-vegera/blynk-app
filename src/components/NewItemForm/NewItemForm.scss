@@ -1,0 +1,35 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
+.item-form {
+    display: flex;
+    margin: 10px 0;
+
+    &-field {
+        @include comment-form(100%, calc(2.25rem + 2px));
+        margin: 0 10px;
+        display: block;
+        color: $form-color;
+        background-clip: padding-box;
+
+        &:focus {
+            @include form-on-focus();
+        }
+    }
+
+    &-button {
+        @include form-button($cyan);
+
+        &:hover {
+            @include form-button-on-hover($button-bgc-green, $button-brd-green);
+        }
+
+        &:focus {
+            @include form-button-on-focus(rgba(23,162,184,.5));
+        }
+
+        &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+    }
+}

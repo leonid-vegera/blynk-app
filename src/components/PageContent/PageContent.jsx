@@ -1,6 +1,6 @@
 import { ItemsComponent } from '../ItemsComponent/ItemsComponent';
 import { CommentsComponent } from '../CommentsComponent/CommentsComponent';
-import './PageContent.css';
+import './PageContent.scss';
 
 export const PageContent = () => {
   return (

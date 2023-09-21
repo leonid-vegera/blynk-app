@@ -1,0 +1,9 @@
+@import '../../utils/mixins';
+
+.items-component {
+    @include component();
+
+    &-title {
+        @include component-title();
+    }
+}
